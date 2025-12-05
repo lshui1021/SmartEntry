@@ -72,11 +72,10 @@ const CheckIn: React.FC = () => {
     };
 
     if (!visitor) return <div>載入中...</div>;
-
-    // 定義顏色變量，模擬 Tailwind 的顏色類
-    const primaryColor = '#1E3A8A'; // Tailwind: blue-800
-    const secondaryTextColor = '#9CA3AF'; // Tailwind: slate-400
-    const inactiveBgColor = '#E5E7EB'; // Tailwind: slate-200
+    
+    const primaryColor = '#1E3A8A'; 
+    const secondaryTextColor = '#9CA3AF'; 
+    const inactiveBgColor = '#E5E7EB'; 
 
     return (
         <div style={{ padding: '20px' }}>

@@ -15,7 +15,7 @@ import './index.css';
 
 function App() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/SmartEntry/">
             <Routes>
                 <Route path="/login" element={<Login />} />
 
@@ -38,7 +38,7 @@ function App() {
                 </Route>
 
                 {/* Default Redirect */}
-                <Route path="/" element={<Navigate to="/kiosk" />} />
+                <Route path="/" element={<Navigate to="/login" />} />
             </Routes>
         </BrowserRouter>
     );

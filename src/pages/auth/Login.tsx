@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Building2 } from 'lucide-react';
 
 const Login: React.FC = () => {
@@ -55,7 +55,9 @@ const Login: React.FC = () => {
                     <button type="submit" className="btn-primary" style={{ width: '100%' }}>登入</button>
                 </form>
                 <div style={{ marginTop: '20px', textAlign: 'center' }}>
-                    <a href="/kiosk" style={{ color: 'var(--primary-color)', textDecoration: 'none' }}>Switch to Kiosk Mode</a>
+                    <Link to="/kiosk">
+                        切換至平板頁面
+                    </Link>
                 </div>
             </div>
         </div>
